@@ -1,6 +1,9 @@
 // React Imports
 import React from 'react'
 
+// Next Imports
+import Link from 'next/link'
+
 // MUI Imports
 import { Divider } from '@mui/material'
 import { Typography } from '@mui/material'
@@ -31,10 +34,12 @@ const Header = () => {
             </div>
             <div className='lg:flex hidden gap-5 items-center'>
                 <Navbar />
-                <CustomButton
-                    children={{ text: "ثبت آگهی" }}
-                    variant={'contained'}
-                />
+                <Link href={"/add-advertisement"}>
+                    <CustomButton
+                        children={{ text: "ثبت آگهی" }}
+                        variant={'contained'}
+                    />
+                </Link>
             </div>
         </div>
     )

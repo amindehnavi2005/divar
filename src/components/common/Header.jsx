@@ -18,7 +18,7 @@ import CustomButton from '../custom/CustomButton'
 
 const Header = () => {
     return (
-        <div className='flex justify-between items-center p-5 border-b-secondary border-b-2'>
+        <div className='fixed flex justify-between items-center p-5 border-b-secondary border-b-2 w-full bg-background text-textPrimary'>
             <div className='flex gap-5 items-center'>
                 <Logo />
                 <Divider orientation='vertical' color='white' flexItem />
